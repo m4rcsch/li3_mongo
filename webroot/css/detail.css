@@ -1,0 +1,45 @@
+.tree {
+	font-family: monospace, sans-serif;
+	font-size: 12px;
+	margin: 10px 0 5px 15px;
+	padding: 0;
+}
+
+.tree, .tree ul {
+	list-style-type: none;
+	padding: 0 10px;
+}
+
+.tree li {
+	padding-bottom: 3px;
+}
+
+.tree .key {
+	display: inline;
+	clear: left;
+	width: 150px;
+	color: purple;
+	overflow: hidden;
+	padding: 0 0 3px 25px;
+	background-repeat: no-repeat;
+	background-position: 8px 50%;
+	cursor: pointer;
+}
+
+.tree .value {
+	display: inline;
+	clear: right;
+	cursor: pointer;
+}
+
+.tree .value ul {
+	cursor: default;
+}
+
+.tree .key.open {
+	background-image: url(../img/open.png);
+}
+
+.tree .key.closed {
+	background-image: url(../img/closed.png);
+}

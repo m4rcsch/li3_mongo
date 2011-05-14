@@ -33,7 +33,7 @@ $urls = array(
 <body class="app">
 	<div id="container">
 		<div id="header">
-			MongoDB viewer, powered by the <?php echo $this->html->link('Lithium', 'http://lithify.me/'); ?>
+			MongoDB viewer, powered by <?php echo $this->html->link('Lithium', 'http://lithify.me/'); ?>
 		</div>
 		<div id="layout">
 			<?php echo $this->content(); ?>
