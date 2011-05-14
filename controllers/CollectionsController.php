@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\models\Collection;
+use app\models\Collections;
 use lithium\data\Connections;
 
 class CollectionsController extends \lithium\action\Controller {
