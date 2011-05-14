@@ -26,8 +26,17 @@ App = {
 			});
 		},
 		add: function() {
-			'<li class="collection"><input type="text" id="ColName" /></li>';
-			$('#groups > ul').append();
+			var input = '<li class="collection"><input type="text" id="ColName" /></li>';
+			$('#groups > ul').append(input);
+			input = $('#groups > ul > li:last > input');
+			input.bind('blur', function(e){
+				$(this).attr('readonly',true);
+				App.collections.create($(this).val());
+			});
+			input.focus();
+		},
+		'create': function(collection){
+			
 		}
 	}
 };
@@ -44,6 +53,10 @@ $(document).ready(function() {
 		App.collections.refresh();
 	});
 
+	$('#AddCollection').bind('click', function(){
+		$('#AddCollection').attr('disabled', true);
+		App.collections.add();
+	});
 	App.start();
 	App.status();
 });

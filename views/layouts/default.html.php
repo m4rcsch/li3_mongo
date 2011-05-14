@@ -21,7 +21,7 @@ $urls = array(
 <html>
 <head>
 	<?php echo $this->html->charset();?>
-	<title>Application &gt; <?php echo $this->title(); ?></title>
+	<title>MongoViewer &gt; <?= $this->title(); ?></title>
 	<?=$this->html->style(array('base', 'detail', 'jquery.treeview')); ?>
 	<?php echo $this->scripts(); ?>
 	<?php echo $this->html->link('Icon', null, array('type' => 'icon')); ?>
